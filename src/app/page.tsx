@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { easeInOut } from "framer-motion";
+import { linear } from "framer-motion";
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Menu, X, Github, Linkedin, Mail, ArrowRight, Download, Code, Palette, Zap, Award, Briefcase, GraduationCap, ChevronDown } from 'lucide-react';
 
@@ -36,7 +37,7 @@ export default function CVHomepage() {
     transition: {
       duration: 3,
       repeat: Infinity,
-      ease: "easeInOut"
+      ease: easeInOut
     }
   };
 
@@ -314,7 +315,7 @@ export default function CVHomepage() {
                 <div className="relative aspect-square">
                   <motion.div 
                     animate={{ rotate: 360 }}
-                    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                    transition={{ duration: 20, repeat: Infinity, ease: linear }}
                     className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-3xl opacity-30"
                   ></motion.div>
                   
