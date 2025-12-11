@@ -27,11 +27,11 @@ import {
  * - Small internal functional components for clarity (keeps single-file)
  */
 
-export default function CVHomepage(): JSX.Element {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.2], [1, 0.98]);
+// export default function CVHomepage(): JSX.Element {
+//   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+//   const { scrollYProgress } = useScroll();
+//   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+//   const scale = useTransform(scrollYProgress, [0, 0.2], [1, 0.98]);
 
   // Reusable variants
   const containerVariants = {
