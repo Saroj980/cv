@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import { easeInOut } from "framer-motion";
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Menu, X, Github, Linkedin, Mail, ArrowRight, Download, Code, Palette, Zap, Award, Briefcase, GraduationCap, ChevronDown } from 'lucide-react';
 
